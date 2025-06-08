@@ -18,7 +18,7 @@ inline size_t p2(size_t limit) {
   return ranges::fold_left_first(even_fib_seq, std::plus<size_t>{}).value();
 }
 
-TEST_CASE("project euler", "[p2]") {
+TEST_CASE("project euler p2") {
   constexpr size_t gold = 4613732;
   constexpr size_t limit = 4e6;
 

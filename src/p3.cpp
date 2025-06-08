@@ -33,11 +33,19 @@ bool is_prime(size_t n) {
   return true;
 }
 
-TEST_CASE("project euler", "[p3]") {
+TEST_CASE("project euler p3") {
   constexpr size_t gold = 6857;
   constexpr size_t limit = 600851475143;
 
   auto actual = p3(limit);
 
   REQUIRE(gold == actual);
+}
+
+TEST_CASE("project euler p3", "[is_prime]") {
+  REQUIRE(is_prime(3));
+  REQUIRE(is_prime(5));
+  REQUIRE(is_prime(7));
+  REQUIRE(!is_prime(9));
+  REQUIRE(!is_prime(25));
 }

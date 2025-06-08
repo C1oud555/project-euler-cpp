@@ -9,7 +9,7 @@ inline size_t p1(size_t limit) {
   return ranges::fold_left_first(seqs, std::plus<size_t>{}).value();
 }
 
-TEST_CASE("project euler", "[p1]") {
+TEST_CASE("project euler p1") {
   constexpr size_t gold = 233168;
   constexpr size_t limit = 1000;
 
