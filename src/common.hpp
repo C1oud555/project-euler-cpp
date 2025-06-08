@@ -14,3 +14,5 @@
 namespace views = ranges::views;
 
 bool compare_result(auto gold, auto actual) { return gold == actual; }
+
+bool is_prime(size_t n);
