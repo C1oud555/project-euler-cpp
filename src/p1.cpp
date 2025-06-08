@@ -1,4 +1,4 @@
-#include "common.hpp"
+#include "common.h"
 
 // NOTE: Multiples of 3 or 5
 

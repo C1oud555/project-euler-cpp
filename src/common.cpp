@@ -1,4 +1,4 @@
-#include "common.hpp"
+#include "common.h"
 
 bool is_prime(size_t n) {
   assert(n >= 2);
