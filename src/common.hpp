@@ -10,3 +10,5 @@
 #include <fmt/std.h>
 
 namespace views = ranges::views;
+
+bool compare_result(auto gold, auto actual) { return gold == actual; }

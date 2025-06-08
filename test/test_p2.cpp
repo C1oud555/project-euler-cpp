@@ -1,8 +1,8 @@
-#include "p1.hpp"
+#include "p2.hpp"
 
 int main(int argc, char *argv[]) {
-  constexpr size_t gold = 233168;
-  auto actual = p1(1000);
+  constexpr size_t gold = 4613732;
+  auto actual = p2(4e6);
 
   if (!compare_result(gold, actual)) {
     fmt::println("gold   : {}", gold);

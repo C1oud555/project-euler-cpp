@@ -19,5 +19,5 @@ for _, file in ipairs(os.files("test/test_*.cpp")) do
          set_kind("binary")
          add_files("test/" .. name .. ".cpp")
          set_default(false)
-         add_tests("default")
+         add_tests("pass_case", {trim_output = true, pass_outputs = "Pass"})
 end
