@@ -1,5 +1,7 @@
 #include "common.hpp"
 
+// NOTE: Even Fibonacci Numbers
+
 inline size_t p2(size_t limit) {
   size_t i = 0, j = 1;
   auto fib_seq = views::generate([&]() -> int {
@@ -17,7 +19,10 @@ inline size_t p2(size_t limit) {
 }
 
 TEST_CASE("project euler", "[p2]") {
-  constexpr size_t gold = 46137320;
-  auto actual = p2(4e6);
+  constexpr size_t gold = 4613732;
+  constexpr size_t limit = 4e6;
+
+  auto actual = p2(limit);
+
   REQUIRE(gold == actual);
 }
