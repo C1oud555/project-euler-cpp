@@ -15,7 +15,7 @@ inline size_t p2(size_t limit) {
                       views::take_while([=](size_t n) { return n < limit; }) |
                       views::filter([](size_t n) { return n % 2 == 0; });
 
-  return ranges::fold_left_first(even_fib_seq, std::plus<size_t>{}).value();
+  return ranges::fold_left(even_fib_seq, 0, std::plus<size_t>{});
 }
 
 TEST_CASE("project euler p2") {
